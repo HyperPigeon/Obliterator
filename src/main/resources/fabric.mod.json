@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "obliterator",
+  "version": "${version}",
+  "name": "Obliterator",
+  "description": "A new enchantment that lets player break blocks at lightning fast speed...at the cost of completely destroying the block. ",
+  "authors": [
+    "CyborgPigeon"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/obliterator/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.hyper_pigeon.obliterator.client.ObliteratorClient"
+    ],
+    "main": [
+      "net.hyper_pigeon.obliterator.Obliterator"
+    ]
+  },
+  "mixins": [
+    "obliterator.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
